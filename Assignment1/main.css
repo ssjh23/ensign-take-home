@@ -1,0 +1,139 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    box-shadow: 0px 2px 5px lightgrey;
+}
+
+.header .logo {
+    margin-left: 20px;
+    height: 80%;
+    aspect-ratio: 1;
+}
+
+.profile .profile-pic {
+    height: 70%;
+    aspect-ratio: 1;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.header .search-container {
+    height: 80%;
+    padding-left: 5%;
+    border-left: 5px solid #DCDCDC	;
+    display: flex;
+    align-items: flex-start;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.search-container .search-icon {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.search-container .search-icon img {
+    height: 100%;
+    width: 100%;
+}
+
+.header .search-container input[type=text] {
+    height: 100%;
+    width: 60%;
+    padding-left: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.header .profile-text {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header .profile{
+    align-items: center;
+    height: 80%;
+    width:20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-section {
+    background-color: #f7f8f9;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 26% 26% 26%;
+    grid-template-rows: 100px 2% 19% 3% 19% 3% 19%;
+    column-gap: 3%;
+}
+
+.grid-section .card {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+
+}
+
+.grid-section .column-title {
+    height: 10%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.card .card-title {
+    color:  #646678;
+    font-size:18px;
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+.card .card-content {
+    line-height: 150%;
+    font-weight: 300;
+    color: #abacb6;
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+.card .card-user {
+    font-size: 80%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 60%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card .card-time {
+    font-weight: 500;
+    align-self: center;
+    justify-self: flex-end;
+}
