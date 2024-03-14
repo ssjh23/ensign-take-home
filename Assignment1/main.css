@@ -27,16 +27,19 @@ html, body {
 }
 
 .profile .profile-pic {
+    outline: none;
+    border: none;
     height: 70%;
     aspect-ratio: 1;
     margin-right: 20px;
     border-radius: 50%;
+    background-color: #ffffff;
 }
 
 .header .search-container {
     height: 80%;
     padding-left: 5%;
-    border-left: 5px solid #DCDCDC	;
+    border-left: 5px solid #f7f8f9	;
     display: flex;
     align-items: flex-start;
     width: 60%;
@@ -44,6 +47,7 @@ html, body {
 }
 
 .search-container .search-icon {
+    padding: 0;
     height: 100%;
     aspect-ratio: 1;
 }
@@ -58,7 +62,14 @@ html, body {
     width: 60%;
     padding-left: 10px;
     border: none;
+    color: #e2e4e6;
     font-size: 15px;
+    font-weight: 300;
+}
+
+.header .search-container input[type=text]::placeholder {
+    color: #e2e4e6;
+    font-weight: 200;
 }
 
 .header .profile-text {
