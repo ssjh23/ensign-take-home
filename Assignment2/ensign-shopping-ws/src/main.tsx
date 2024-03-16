@@ -2,9 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom"
+import LandingPage from './screens/LandingPage.tsx'
+import NavBar from './screens/NavBar.tsx'
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <NavBar />
+  }
+])
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
