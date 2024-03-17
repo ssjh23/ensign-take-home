@@ -17,9 +17,9 @@ npm run dev
 ```
 
 ### Assignment 2 Routes
-`{baseUrl}/:userid`: base url for the project. When the project first starts, add anything to replace `/:id` to load the main page
-`{baseUrl}/:userid/product/:itemid`: Product detail route. Accessed when the user clicks on any product card
-`{baseUrl/:userid/checkout`: Checkout route. Accessed when the user clicks the shopping cart icon on the top right.
+`{baseUrl}/:userid`: base url for the project. When the project first starts, add anything to replace `/:id` to load the main page <br><br>
+`{baseUrl}/:userid/product/:itemid`: Product detail route. Accessed when the user clicks on any product card  <br><br>
+`{baseUrl/:userid/checkout`: Checkout route. Accessed when the user clicks the shopping cart icon on the top right.  <br><br>
 
 ### Data Persistence
 Change the user id to show that each user has access to only their own shopping cart. The browser can also be closed and opened and the shopping cart will be maintained.
